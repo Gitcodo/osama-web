@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation-2</title>
+  <style>
+    #box1{    /*altirnate*/
+      width: 250px;
+      height: 250px;
+      background-color: tomato;
+      font-size: 6em;
+      text-align: center;
+      animation-name: slideLeft;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    #box2{
+      width: 250px;
+      height: 250px;
+      background-color: rgb(206, 255, 71);
+      font-size: 6em;
+      text-align: center;
+      animation-name: slideRight;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    #box3{
+      width: 250px;
+      height: 250px;
+      background-color: rgb(71, 255, 95);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: slideUp;
+      animation-iteration-count: infinite;
+    }
+    #box4{
+      margin-left: 250px;
+      width: 250px;
+      height: 250px;
+      background-color: rgb(71, 181, 255);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: slideDown;
+      animation-iteration-count: infinite;
+    }
+    #box5{
+      margin-left: 500px;
+      width: 250px;
+      height: 250px;
+      background-color: rgb(71, 114, 255);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: rotate;
+      animation-iteration-count: infinite;
+    }
+    #box6{
+      margin-left: 1000px;
+      width: 250px;
+      height: 250px;
+      background-color: rgb(157, 71, 255);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: grow;
+      animation-iteration-count: infinite;
+    }
+    #box7{
+      width: 250px;
+      height: 250px;
+      background-color: rgb(255, 71, 255);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: shrink;
+      animation-iteration-count: infinite;
+    }
+    #box8{
+      width: 250px;
+      height: 250px;
+      background-color: rgb(85, 82, 75);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: fade;
+      animation-iteration-count: infinite;
+    }
+    #box9{
+      width: 250px;
+      height: 250px;
+      background-color: rgb(189, 178, 133);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: colorChange;
+      animation-iteration-count: infinite;
+    }
+    #box10{
+      margin-left: 300px;
+      width: 250px;
+      height: 250px;
+      background-color: rgba(0, 250, 187, 0.404);
+      font-size: 6em;
+      text-align: center;
+      animation-duration: 5s;
+      animation-name: glow;
+      animation-iteration-count: infinite;
+    }
+    @keyframes slideLeft{
+      from{
+        transform: translateX(300%);}
+    }
+    @keyframes slideRight{
+      to{
+        transform: translateX(300%);}
+    }
+    @keyframes slideUp{
+      from{
+        transform: translateY(300%);}
+    }
+    @keyframes slideDown{
+      to{
+        transform: translateY(300%);}
+    }
+    @keyframes rotate{
+      50%{
+        transform: rotateZ(360deg);
+    }
+    }
+    @keyframes grow{
+      100%{transform: scale(2,2);}
+    }
+    @keyframes shrink{
+      100%{transform: scale(0.5,0.5);}
+    }
+    @keyframes fade{
+      50%{opacity: 0;}
+    }
+    @keyframes colorChange{
+      0%{
+        background-color: rgb(255, 0, 0);
+      }
+      25%{
+        background-color: rgb(255, 187, 0);
+      }
+      50%{
+        background-color: rgb(30, 255, 0);
+      }
+      75%{
+        background-color: rgb(0, 195, 255);
+      }
+      100%{
+        background-color: rgb(255, 0, 255);
+      }
+    }
+    @keyframes glow{
+      50%{
+        box-shadow: 0px 0px 50px rgb(0, 0, 0)
+    }
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">Left</div>
+  <div id="box2">Right</div>
+  <div id="box3">Up</div>
+  <div id="box4">Down</div>
+  <div id="box5">Rotate</div>
+  <div id="box6">Grow</div>
+  <div id="box7">Shrink</div>
+  <div id="box8">Fed</div>
+  <div id="box9">Colors</div>
+  <div id="box10">Glow</div>
+</body>
+</html>

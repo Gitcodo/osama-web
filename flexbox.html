@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>FlexBox</title>
+    <style>
+        #parent{
+            border: 1px solid;
+            min-width: 400px;
+            min-width: 400px;
+            background-color: lightgray;
+            
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: centera;
+        }
+        .box{
+            background-color: lightblue;
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent2{
+            display: flex;
+            background-color: lightgreen;
+            min-height: 00px;
+            min-width: 00px;
+            border: 1px solid;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+            justify-content: space-evenly;
+        }
+        .box2{
+            background-color: lightcoral;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            margin: 5px;
+            
+
+
+        }
+        #box12{
+            flex-shrink: 0;
+        }
+        #box62{
+            flex-grow: 1;
+        }
+        h1{
+            text-align: center;
+
+        }
+        @media(max-width: 500px){
+            #parent2{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-wrap: wrap;</h1>
+    <div id="parent">
+        
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    </div>
+    <h1>flex-direction: no wrap;</h1>
+    <div id="parent2">
+        
+        <div id="box12" class="box2">1 <br>flex-shrink:1;</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+        <div class="box2">4</div>
+        <div class="box2">5</div>
+        <div id="box62" class="box2">6 <br>flex-grow:1;</div>
+        </div>
+</body>
+</html>
